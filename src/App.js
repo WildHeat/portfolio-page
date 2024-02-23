@@ -1,8 +1,8 @@
 import "./assests/App.css";
 import Header from "./components/Header";
-import Profile from "./sections/Profile";
-import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
+import Profile from "./sections/ProfileSection";
+import Projects from "./sections/ProjectsSection";
+import Skills from "./sections/SkillsSection";
 
 function App() {
   return (

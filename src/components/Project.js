@@ -3,7 +3,7 @@ import React from "react";
 const Project = ({ projectData }) => {
   return (
     <div>
-      <h1>{projectData.name}</h1>
+      <h3>{projectData.name}</h3>
       <p>{projectData.description}</p>
       <div>{projectData.image}</div>
       <p>{projectData.techStack}</p>

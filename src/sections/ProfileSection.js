@@ -12,8 +12,8 @@ const Profile = () => {
             the University of Surrey. Addicted to art, bouldering and computers.
           </p>
           <div className="summary-button-container">
-            <button className="btn-explore">Explore My Work</button>
-            <button className="btn-skills">Skills</button>
+            <button className="btn-explore btn">Explore My Work</button>
+            <button className="btn-skills btn">Skills</button>
           </div>
         </div>
       </div>

@@ -9,6 +9,6 @@
         "name" : "AB Progress Tracker", 
         "description" : "something about progress tracking and has JWT and spring security",
         "image" : "someURL",
-        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2", "JUnit Testing", "Mockito", "Docker", "Nginx"]
+        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2"]
     }  
 ]
