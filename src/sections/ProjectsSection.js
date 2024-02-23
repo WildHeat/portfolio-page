@@ -4,9 +4,9 @@ import Project from "../components/Project";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="project-section-container">
       <h1>Projects</h1>
-      <div className="project-container">
+      <div className="projects-container">
         {projectsData.map((project) => {
           return <Project projectData={project} />;
         })}
