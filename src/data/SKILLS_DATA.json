@@ -1,0 +1,11 @@
+[
+    {"name" : "Java"},
+    {"name" : "Spring Boot"},
+    {"name" : "JavaScript"},
+    {"name" : "React"},
+    {"name" : "Git"},
+    {"name" : "SQL"},
+    {"name" : "AWS"},
+    {"name" : "Docker"},
+    {"name" : "Nginx"}
+]

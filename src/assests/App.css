@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-color: #204e4a;
+  --accent-color: #c0e0a5;
+  --main-color: #58aa44;
+  --light-color: #ffffff;
+}
+
+.header-container {
+  background-color: aqua;
+}
+
+.profile-container {
+  background-color: var(--light-color);
+  /* height: 80vh; */
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-content {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5em 8%;
+}
+
+.profile-image-container {
+  background-color: #58aa44;
+  width: 30%;
+  min-width: 280px;
+  height: 50vh;
+  background-size: cover;
+  border-radius: 200px;
+  background-position: center;
+  /* background-image: url(../src/img/Aron.jpg); */
+  flex: 1;
+}
+
+.profile-summary-container {
+  font-size: 1.5em;
+  flex: 1;
+}
+
+.summary-text {
+  padding-top: 2em;
+  max-width: 50ch;
+}
+
+.summary-button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-container {
+  background-color: var(--accent-color);
+  height: 50vh;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.skill {
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  min-width: max(200px, 18vw);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill:nth-child(even) {
+  background-color: var(--main-color);
+}

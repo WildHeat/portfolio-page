@@ -1,0 +1,170 @@
+.header-container {
+  z-index: 99998;
+  color: var(--light-color);
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1em;
+  position: sticky;
+  top: 0;
+}
+
+.register-and-login-links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.link {
+  padding: 0.5rem;
+  color: white;
+}
+
+.link:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.register-container:hover {
+  background-color: var(--light-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.register-container {
+  /* padding: 0.25rem 1.25rem; */
+  padding-inline: 0.8rem;
+  padding-top: 0.35rem;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toggle-container {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.behind-navbar-overlay {
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+
+.logo,
+.register-container {
+  z-index: 99997;
+  position: relative;
+  color: var(--light-color);
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+@media (max-width: 850px) {
+  .toggle-container .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .toggle-container {
+    display: flex;
+    margin-block: auto;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-container:hover {
+    cursor: pointer;
+  }
+
+  .header-links {
+    padding-top: max(20%, 81px);
+    background-color: var(--dark-color);
+    position: absolute;
+    justify-content: flex-start;
+    width: 80%;
+    height: 100vh;
+    top: 0%;
+    left: -1.5em;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+
+  .show {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .header-container {
+    justify-content: space-between;
+    padding-inline: 1rem;
+  }
+  .bouldering-title {
+    display: none;
+  }
+}
+
+.content {
+  display: none;
+  border-radius: 8px;
+  background-color: var(--dark-color);
+}
+
+.content * {
+  border-radius: 8px;
+  display: block;
+  padding: 0.7em 0.7em 0.7em 0.5em;
+}
+
+.content *:hover {
+  display: block;
+  background-color: #290a3d;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.dropdown:hover .content {
+  display: block;
+  position: absolute;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.468);
+}
+
+.dropdown-button {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  margin-block: auto;
+  padding: 0.8em 2em;
+  border-radius: 14px;
+}
+
+.dropdown:hover .dropdown-button {
+  cursor: pointer;
+  background-color: var(--light-color);
+  color: var(--accent-color);
+}
