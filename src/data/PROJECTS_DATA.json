@@ -2,13 +2,17 @@
     {
         "name" : "Abbouldering.com", 
         "description" : "something about bouldering booking site that allows for strpe and has JWT and spring security",
+        "keyPoints" : ["Stripe payment integration", "Spring Security with JWT authentication", "107 JUnit, Mockito and integration tests.", "Deployed with Docker and used Nginx for server configuration"],
         "image" : "someURL",
-        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2", "JUnit Testing", "Mockito", "Docker", "Nginx"]
+        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2", "JUnit Testing", "Mockito", "Docker", "Nginx"],
+        "url": "https://abboulder.com"
     },
     {
         "name" : "AB Progress Tracker", 
         "description" : "something about progress tracking and has JWT and spring security",
+        "keyPoints" : ["Stripe payment integration", "Spring Security with JWT authentication", "107 JUnit, Mockito and integration tests.", "Deployed with Docker and used Nginx for server configuration"],
         "image" : "someURL",
-        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2"]
+        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2"],
+        "url": "http://ab-progress-tracker.s3-website.eu-west-2.amazonaws.com/"
     }  
 ]

@@ -17,6 +17,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <div className="background-shape"></div>
     </div>
   );
 };

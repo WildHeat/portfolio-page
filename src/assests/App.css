@@ -6,7 +6,8 @@
 :root {
   --dark-color: #204e4a;
   --accent-color: #c0e0a5;
-  --main-color: #58aa44;
+  --main-color: #e5a825;
+  --secondary-color: #f46c6c;
   --light-color: #ffffff;
 }
 
@@ -34,7 +35,7 @@
   background-size: cover;
   border-radius: 200px;
   background-position: center;
-  /* background-image: url(../src/img/Aron.jpg); */
+  background-image: url(../assests/Aron.jpg);
   flex: 1;
 }
 
@@ -90,9 +91,17 @@
 }
 
 .skills-container {
+  position: relative;
+  z-index: 1;
   height: 30vh;
   display: flex;
   overflow-x: scroll;
+}
+
+.skills-title {
+  text-align: center;
+  color: black;
+  padding-bottom: 1em;
 }
 
 .skill {
@@ -108,12 +117,17 @@
 }
 
 .skill:nth-child(even) {
-  color: var(--accent-color);
-  background-color: var(--dark-color);
+  color: var(--light-color);
+  background-color: var(--secondary-color);
 }
 
 .project-section-container {
   padding: 5%;
+}
+
+.project-section-container h1 {
+  padding-bottom: 1em;
+  text-align: center;
 }
 
 .project-content-container {
@@ -126,4 +140,41 @@
   width: 300px;
   height: 200px;
   background-color: #204e4a;
+}
+
+.project-title {
+  padding-left: 0.5em;
+}
+
+.project-container {
+  padding: 1% 1%;
+  border-radius: 10px;
+  border: solid #204e4a;
+}
+
+.project-text-container * {
+  padding-left: 1em;
+}
+
+.project-teck-stack {
+  padding-left: 0em;
+}
+
+.all-projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.background-shape {
+  left: 0%;
+  transform: rotate(65deg);
+  position: absolute;
+  background-color: #204e4a;
+  width: 100vw;
+  height: 30px;
+}
+
+.profile-content {
+  z-index: 1;
 }

@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="project-section-container">
       <h1>Projects</h1>
-      <div className="projects-container">
+      <div className="all-projects-container">
         {projectsData.map((project) => {
           return <Project projectData={project} />;
         })}
