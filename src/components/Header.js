@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div>
         <h2 className="logo" onClick={() => {}}>
-          Aron B<span className="bouldering-title">erhane</span>
+          Aron Berhane
         </h2>
         <div className="overlay-container hidden">
           <div

@@ -1,11 +1,5 @@
 [
-    {"name" : "Java"},
-    {"name" : "Spring Boot"},
-    {"name" : "JavaScript"},
-    {"name" : "React"},
-    {"name" : "Git"},
-    {"name" : "SQL"},
-    {"name" : "AWS"},
-    {"name" : "Docker"},
-    {"name" : "Nginx"}
+    {"name" : "Backend", "skills" : ["Java", "Spring", "RESTful API"]},
+    {"name" : "Frontend", "skills" :  ["JavaScript", "React", "HTML/CSS"]},
+    {"name" : "Other", "skills" : ["AWS", "Docker", "Git", "SQL", "Bash","Nginx"]}
 ]

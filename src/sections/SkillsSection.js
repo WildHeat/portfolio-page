@@ -8,7 +8,7 @@ const Skills = () => {
       <h1 className="skills-title">My Skills</h1>
       <div className="skills-container">
         {skillData.map((skill, index) => {
-          return <Skill key={index} name={skill.name} />;
+          return <Skill key={index} name={skill.name} skills={skill.skills} />;
         })}
       </div>
     </div>

@@ -11,12 +11,6 @@
   border-color: black;
 }
 
-.register-and-login-links {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
-
 a {
   text-decoration: none;
 }
@@ -38,23 +32,6 @@ a {
   cursor: pointer;
 }
 
-.register-container:hover {
-  background-color: var(--light-color);
-  color: var(--accent-color);
-  cursor: pointer;
-}
-
-.register-container {
-  /* padding: 0.25rem 1.25rem; */
-  padding-inline: 0.8rem;
-  padding-top: 0.35rem;
-  border-radius: 3px;
-  background-color: var(--accent-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .toggle-container {
   display: none;
 }
@@ -69,8 +46,8 @@ a {
   background-color: rgba(0, 0, 0, 0.468);
 }
 
-.logo,
-.register-container {
+.logo {
+  font-size: 2em;
   z-index: 99997;
   position: relative;
   color: var(--light-color);
