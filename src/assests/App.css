@@ -16,7 +16,7 @@
   background-image: url(./profile-back.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,30 +27,35 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5em 8%;
+  gap: 1em 8%;
   position: relative;
   z-index: 1;
 }
 
 .profile-image-container {
-  width: 30%;
-  min-width: 280px;
+  width: 40%;
+  min-width: 240px;
   height: 50vh;
   background-size: cover;
   border-radius: 200px;
   background-position: center;
   background-image: url(../assests/Aron.jpg);
-  flex: 1;
+  /* flex: 1; */
 }
 
 .profile-summary-container {
+  min-width: 50%;
+  margin: auto;
   font-size: 1.5em;
-  flex: 1;
+  /* flex: 1; */
 }
 .summary-title {
   background-color: rgba(255, 255, 255, 0.901);
-  padding-inline: 0.2em;
   border-radius: 10px;
+  padding-inline: 0.2em;
+}
+.summary-title-aron {
+  color: var(--secondary-color);
 }
 
 .summary-text {
@@ -143,7 +148,6 @@
 
 .project-section-container {
   background-color: var(--secondary-color);
-  padding: 5%;
 }
 
 .project-section-container h1 {
@@ -159,19 +163,22 @@
 
 .project-image-container {
   margin: 1em 0 1em 2em;
-  width: 300px;
-  height: 200px;
+  width: 40%;
+  min-width: 240px;
+  aspect-ratio: 3/2;
+  /* height: 200px; */
   background-color: #204e4a;
 }
 
 .project-title {
-  padding-left: 0.5em;
+  padding-left: 5em 0.5em;
 }
 
 .project-container {
   padding: 1% 1%;
   border-radius: 10px;
-  background-color: var(--light-color);
+  color: white;
+  /* background-color: var(--light-color); */
 
   border: solid #e0e0e0;
 }

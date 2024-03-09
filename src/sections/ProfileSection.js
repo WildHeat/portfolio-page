@@ -6,7 +6,9 @@ const Profile = () => {
       <div className="profile-content">
         <div className="profile-image-container"></div>
         <div className="profile-summary-container">
-          <h1 className="summary-title">Hey, I'm Aron.</h1>
+          <h2 className="summary-title">
+            Hey, I'm <span className="summary-title-aron">Aron.</span>
+          </h2>
           <h2 className="summary-title">I'm a Full Stack Developer.</h2>
           {/* <p className="summary-text">
             Born in Germany and raised in England. Studied Computer Science at

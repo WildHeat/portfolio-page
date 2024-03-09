@@ -1,5 +1,5 @@
 [
     {"name" : "Backend", "skills" : ["Java", "Spring", "RESTful API"]},
     {"name" : "Frontend", "skills" :  ["JavaScript", "React", "HTML/CSS"]},
-    {"name" : "Other", "skills" : ["AWS", "Docker", "Git", "SQL", "Bash","Nginx"]}
+    {"name" : "Other", "skills" : ["AWS", "Docker", "Git", "SQL", "Bash","Nginx", "Python"]}
 ]
