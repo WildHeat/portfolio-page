@@ -1,4 +1,5 @@
 import "../assests/Header.css";
+import scrollTo from "../util/ScrollTo";
 
 const Header = () => {
   const toggle = () => {
@@ -23,7 +24,12 @@ const Header = () => {
         <span className="bar"></span>
       </div>
       <div>
-        <h2 className="logo" onClick={() => {}}>
+        <h2
+          className="logo"
+          onClick={() => {
+            scrollTo("profile-container");
+          }}
+        >
           Aron Berhane
         </h2>
         <div className="overlay-container hidden">
@@ -36,6 +42,7 @@ const Header = () => {
       <div className="header-links">
         <div
           onClick={() => {
+            scrollTo("profile-container");
             closeNavBar();
           }}
         >
@@ -43,17 +50,19 @@ const Header = () => {
         </div>
         <div
           onClick={() => {
-            closeNavBar();
-          }}
-        >
-          <p className="link">Projects</p>
-        </div>
-        <div
-          onClick={() => {
+            scrollTo("skills-section-container");
             closeNavBar();
           }}
         >
           <p className="link">Skills</p>
+        </div>
+        <div
+          onClick={() => {
+            scrollTo("project-section-container");
+            closeNavBar();
+          }}
+        >
+          <p className="link">Projects</p>
         </div>
         <div
           onClick={() => {

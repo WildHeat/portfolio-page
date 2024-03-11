@@ -5,7 +5,7 @@ import Project from "../components/Project";
 const Projects = () => {
   return (
     <div className="project-section-container">
-      <h1>Projects</h1>
+      <h1>My Projects</h1>
       <div className="all-projects-container">
         {projectsData.map((project) => {
           return <Project projectData={project} />;

@@ -8,10 +8,18 @@ const Project = ({ projectData }) => {
           <a href={projectData.url} target="_blank" rel="noreferrer">
             <h2 className="project-title">{projectData.name}</h2>
           </a>
-          <p>{projectData.description}</p>
+          <br />
+          {projectData.description.map((paragraph, key) => {
+            return (
+              <div key={key}>
+                <p>{paragraph}</p>
+                <br />
+              </div>
+            );
+          })}
           <p>Key points</p>
-          {projectData.keyPoints.map((point) => {
-            return <p>- {point}</p>;
+          {projectData.keyPoints.map((point, key) => {
+            return <p key={key}>- {point}</p>;
           })}
           <br />
           <p className="project-teck-stack">
@@ -19,8 +27,28 @@ const Project = ({ projectData }) => {
             <br />
             {projectData.techStack.join(", ")}
           </p>
+          <br />
+          <div className="project-bottom-links">
+            <a href={projectData.url} target="_blank" rel="noreferrer">
+              <button className="project-btn">
+                <h4>Live Site!</h4>
+              </button>
+            </a>
+            <a href={projectData.github} target="_blank" rel="noreferrer">
+              <button className="project-btn">
+                <h4>GitHub</h4>
+              </button>
+            </a>
+          </div>
         </div>
-        <div className="project-image-container">{projectData.image}</div>
+        <div
+          className="project-image-container"
+          style={{
+            backgroundImage: `url(${
+              process.env.PUBLIC_URL + projectData.image
+            })`,
+          }}
+        ></div>
       </div>
     </div>
   );

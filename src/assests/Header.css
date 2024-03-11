@@ -23,12 +23,14 @@ a {
   gap: 3em;
 }
 .link {
+  font-size: large;
+  font-weight: 600;
   padding: 0.5rem;
   color: white;
 }
 
 .link:hover {
-  color: var(--accent-color);
+  color: #fae5b9;
   cursor: pointer;
 }
 
@@ -55,7 +57,7 @@ a {
 
 .logo:hover {
   cursor: pointer;
-  color: var(--accent-color);
+  color: #fae5b9;
 }
 
 @media (max-width: 850px) {

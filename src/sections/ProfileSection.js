@@ -1,4 +1,5 @@
 import React from "react";
+import scrollTo from "../util/ScrollTo";
 
 const Profile = () => {
   return (
@@ -15,8 +16,18 @@ const Profile = () => {
             the University of Surrey. Addicted to art, bouldering and computers.
           </p> */}
           <div className="summary-button-container">
-            <button className="btn-explore btn">Explore My Work</button>
-            <button className="btn-skills btn">Skills</button>
+            <button
+              className="btn-explore btn"
+              onClick={() => scrollTo("project-section-container")}
+            >
+              Explore My Work
+            </button>
+            <button
+              className="btn-skills btn"
+              onClick={() => scrollTo("skills-section-container")}
+            >
+              Skills
+            </button>
           </div>
         </div>
       </div>

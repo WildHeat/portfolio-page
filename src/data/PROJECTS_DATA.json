@@ -1,18 +1,20 @@
 [
     {
         "name" : "Abbouldering.com", 
-        "description" : "something about bouldering booking site that allows for strpe and has JWT and spring security",
-        "keyPoints" : ["Stripe payment integration", "Spring Security with JWT authentication", "107 JUnit, Mockito and integration tests.", "Deployed with Docker and used Nginx for server configuration"],
-        "image" : "someURL",
-        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2", "JUnit Testing", "Mockito", "Docker", "Nginx"],
-        "url": "https://abboulder.com"
+        "description" : ["The project entailed creating, developing, testing and deploying a full stack events booking application. It enables administrators to efficiently manage events with creation, updating, and deletion functionalities. Utilising the Stripe payment system, users can seamlessly pay and book slots for events.", "The application ensures security through Spring Boot security with JWT authentication, safeguarding user data and interactions. Additionally, it incorporates an email confirmation feature to provide users with reassurance and confirmation upon successful booking."],
+        "keyPoints" : ["Stripe payment integration.", "Spring Security with JWT authentication.", "107 JUnit, Mockito and integration tests.", "Deployed on AWS EC2 with Docker and used Nginx for server configuration."],
+        "image" : "/img/abb.jpg",
+        "techStack" : ["Java Spring Boot", "React JavaScript", "AWS EC2", "JUnit Testing", "Mockito", "Docker", "Nginx", "MySQL"],
+        "url": "https://abboulder.com",
+        "github" : "https://github.com/WildHeat/bouldering-booking"
     },
     {
         "name" : "AB Progress Tracker", 
-        "description" : "something about progress tracking and has JWT and spring security",
-        "keyPoints" : ["Stripe payment integration", "Spring Security with JWT authentication", "107 JUnit, Mockito and integration tests.", "Deployed with Docker and used Nginx for server configuration"],
-        "image" : "someURL",
-        "techStack" : ["Java Spring Boot", "React JavaScript", "HTML/CSS", "AWS EC2"],
-        "url": "http://ab-progress-tracker.s3-website.eu-west-2.amazonaws.com/"
+        "description" : ["A progress tracker built around gamifying learning new skills to keep progress tracking enjoyable.  Putting in time and focus into your skill will gain you EXP. This will increase the level of the skill which in turns will level up your profile.", "With the use of a dashboard that includes graphs and statistics, the progress tracker extracts useful insights that give the user a greater depth about their learning."],
+        "keyPoints" : ["Spring Security with JWT authentication.", "Data visualisation.", "Deployed with AWS S3, AWS EC2 and AWS RDS"],
+        "image" : "/img/ab-progress-tracker.jpg",
+        "techStack" : ["Java Spring Boot", "React JavaScript", "HTML/CSS", "AWS S3", "AWS EC2", "AWS RDS", "MySQL"],
+        "url": "http://ab-progress-tracker.s3-website.eu-west-2.amazonaws.com/",
+        "github" : "https://github.com/WildHeat/Progress-front-end"
     }  
 ]
