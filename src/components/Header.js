@@ -66,6 +66,7 @@ const Header = () => {
         </div>
         <div
           onClick={() => {
+            scrollTo("contact-section-container");
             closeNavBar();
           }}
         >

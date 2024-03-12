@@ -167,7 +167,7 @@
 .project-image-container {
   margin: 1em auto;
   width: 50%;
-  min-width: max(300px, 40%);
+  min-width: max(250px, 40%);
   aspect-ratio: 3/2;
   background-size: contain;
   background-position: center;
@@ -187,7 +187,7 @@
 }
 
 .project-container {
-  margin: 1em;
+  margin: 1em 1em 2em 1em;
   padding: 1% 1%;
   color: black;
   border: solid var(--main-color) 1px;
@@ -203,7 +203,6 @@
 .all-projects-container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 
 .project-bottom-links {
@@ -269,22 +268,62 @@
 .second-profile-image {
   width: 50%;
   padding-top: 35%;
-  background-image: url(./Monsoon.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .second-image-1 {
+  width: 35%;
+  aspect-ratio: 5/4.5;
+  /* padding-top: 50%; */
+  background-image: url(./st-pauls.jpg);
   position: absolute;
   border: solid var(--secondary-color);
   background-color: var(--secondary-color);
-  transform: translate(20%, 20px) rotate(-12deg);
+  transform: translate(40%, -30px) rotate(-12deg);
 }
 .second-image-2 {
+  aspect-ratio: 3/1;
+  background-image: url(./climbing.jpg);
   border: solid var(--tertiary-color);
   background-color: var(--tertiary-color);
-  transform: translate(80%, -40px) rotate(9deg);
+  transform: translate(80%, -40px) rotate(8deg);
+}
+
+.contact-content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .contact-option {
+  margin-bottom: 2em;
+  flex: 1;
+  text-align: center;
+  width: max(50%, 250px);
+  margin-inline: auto;
+}
+
+.contact-option h3 {
+  color: black;
+  padding-block: 0.5em;
+  background-color: var(--light-color);
+  border: solid var(--main-color); /* #9a9a9a;*/
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.463);
+}
+
+.contact-option h3:hover {
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.contact-description {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.contact-title {
+  padding-bottom: 0.5em;
 }
